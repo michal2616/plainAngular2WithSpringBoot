@@ -1,4 +1,17 @@
 <app-header></app-header>
+<div class="card">
+  <ng-container *ngFor="let contact of data.contacts">
+    <div class="contact-details">
+      <h2>{{contact.name}}</h2>
+      <h1>{{contact.location}}</h1>
+      <h3>{{contact.role}}</h3>
+      <h4>{{contact.company}}</h4>
+      <p>{{contact.info}}</p>
+      <h4>{{contact.email}}</h4>
+      <h4>{{contact.twitter}}</h4>
+    </div>
+  </ng-container>
+</div>
 <h1>
   {{title}}
 </h1>
