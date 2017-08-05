@@ -1,14 +1,14 @@
-import { Ng2bootPage } from './app.po';
+import { Ang4clientPage } from './app.po';
 
-describe('ng2boot App', function() {
-  let page: Ng2bootPage;
+describe('ang4client App', () => {
+  let page: Ang4clientPage;
 
   beforeEach(() => {
-    page = new Ng2bootPage();
+    page = new Ang4clientPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
